@@ -1,30 +1,36 @@
+/* universal styler for all of webpage */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* sets page background to selected hexadecimal color */
 body {
     background-color: #d9dcd6;
 }
 
-header {
+/* class header tag setting padding all around header, text styler for a new font, background color of header, text styler for color of text */
+.header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-header h1 {
+/* class header styling, allowing the header to contain multiple text styling within its text */
+.header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-header h1 .seo {
+/* text styler for color */
+.header h1 .seo {
     color: #d9dcd6;
 }
 
-header nav {
+/* styling for the links attached to the header, setting spacing, location, and font styling */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,24 +38,29 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul {
+/* nav styling, keeps links in a row instead of a list */
+.header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+/* nav styling, sets spacing on the left of the links, inline allows usable space next to links for header */
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* nav text styling */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* sets font size of nav links */
 p {
     font-size: 16px;
 }
 
+/* img stlying location and spacing/sizing for main page image */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,23 +70,27 @@ p {
     background-position: center;
 }
 
+/* img styling floating on the left side of page */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* img styling floating it on the right side of page */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* content class stlying for all subjects in category */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* side bar of page styling, setting its location and spacing on the page and color of its background along with text styling of headers */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,55 +101,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* class styler for the  */
+.benefit-lead,.benefit-brand,.benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* class styler for the headers positioning and bottom margin */
+.benefit-lead h3,.benefit-brand h3,.benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* stylers for images on the sidebar */
+.benefit-lead img,.benefit-brand img,.benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* box model stylers as well as text stylers */
+#search-engine-optimization,#online-reputation-management,#social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,58 +130,26 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* image styler for height */
+#search-engine-optimization img,#online-reputation-management img,#social-media-marketing img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* header styler, bottom margin spacing, font styling */
+#search-engine-optimization h2,#online-reputation-management h2,#social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* footer styler for center positiong, font stlying, and spacing around the text */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+/* font size syling */
+footer h3 {
     font-size: 20px;
 }
